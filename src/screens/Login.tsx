@@ -33,7 +33,7 @@ const Login: React.FC = () => {
   );
   const [loading, setLoading] = React.useState(false);
   const { activeSite } = React.useContext(SitesContext);
-  const service = useWebSocketService({ activeSite, loading: false });
+  const service = useWebSocketService({activeSite, loading: false });
   const { setJwt } = React.useContext(AuthContext);
 
   const parseMessage = (msg: WebSocketJsonResponse) => {
